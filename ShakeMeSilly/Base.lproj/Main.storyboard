@@ -1,24 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="edosz.ttf">
+            <string>EdoSZ</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ShakeMeSilly" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beach" translatesAutoresizingMaskIntoConstraints="NO" id="tyG-Cc-Ihb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake Me Silly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kVY-Ru-ejN">
+                                <rect key="frame" x="16" y="20" width="288" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kVY-Ru-ejN" secondAttribute="height" multiplier="49:24" id="VI1-9w-OVE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89j-sM-NoZ">
+                                <rect key="frame" x="16" y="169" width="288" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="S76-hT-Nwm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9p-Zc-2Rf">
+                                <rect key="frame" x="16" y="309" width="288" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="qSG-CO-poe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJg-Sr-LcW">
+                                <rect key="frame" x="16" y="382" width="288" height="78"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="78" id="Teq-2y-TO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="EdoSZ" family="Edo SZ" pointSize="50"/>
+                                <state key="normal" title="START GAME">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9uR-my-VmJ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Maracas1" translatesAutoresizingMaskIntoConstraints="NO" id="8bp-La-t61">
+                                <rect key="frame" x="16" y="242" width="288" height="59"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kVY-Ru-ejN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3yF-c6-62u"/>
+                            <constraint firstItem="89j-sM-NoZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="72c-jn-4Nj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yJg-Sr-LcW" secondAttribute="bottom" constant="20" id="9tG-1N-pn7"/>
+                            <constraint firstItem="tyG-Cc-Ihb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="CaU-gS-eLa"/>
+                            <constraint firstItem="kVY-Ru-ejN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="HO3-oD-sSk"/>
+                            <constraint firstItem="89j-sM-NoZ" firstAttribute="top" secondItem="kVY-Ru-ejN" secondAttribute="bottom" constant="8" id="JRv-FX-9lB"/>
+                            <constraint firstItem="tyG-Cc-Ihb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Jhc-qm-bX2"/>
+                            <constraint firstAttribute="bottom" secondItem="tyG-Cc-Ihb" secondAttribute="bottom" id="KQ0-zw-740"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w9p-Zc-2Rf" secondAttribute="trailing" constant="16" id="O2h-1i-lHY"/>
+                            <constraint firstItem="w9p-Zc-2Rf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TC0-4r-qoM"/>
+                            <constraint firstItem="8bp-La-t61" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WKt-Om-Eia"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kVY-Ru-ejN" secondAttribute="trailing" constant="16" id="a6F-Dv-MuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8bp-La-t61" secondAttribute="trailing" constant="16" id="fmG-BN-NqV"/>
+                            <constraint firstItem="yJg-Sr-LcW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oLy-uU-HhM"/>
+                            <constraint firstItem="yJg-Sr-LcW" firstAttribute="top" secondItem="w9p-Zc-2Rf" secondAttribute="bottom" constant="8" id="ptS-NH-g0d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="89j-sM-NoZ" secondAttribute="trailing" constant="16" id="vnN-QH-gz0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yJg-Sr-LcW" secondAttribute="trailing" constant="16" id="vxD-PP-XND"/>
+                            <constraint firstItem="tyG-Cc-Ihb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="w4P-zH-Igr"/>
+                            <constraint firstItem="8bp-La-t61" firstAttribute="top" secondItem="89j-sM-NoZ" secondAttribute="bottom" constant="8" id="y03-0u-5pf"/>
+                            <constraint firstItem="w9p-Zc-2Rf" firstAttribute="top" secondItem="8bp-La-t61" secondAttribute="bottom" constant="8" id="zqI-vU-DcZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="8bp-La-t61" id="CAU-QF-eaM"/>
+                        <outlet property="scoreLabel" destination="w9p-Zc-2Rf" id="b9r-U9-cfv"/>
+                        <outlet property="startGameButton" destination="yJg-Sr-LcW" id="PFF-5l-ozk"/>
+                        <outlet property="timeLabel" destination="89j-sM-NoZ" id="x7g-eb-GjD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Maracas1" width="551" height="743"/>
+        <image name="beach" width="844" height="888"/>
+    </resources>
 </document>
